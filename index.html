@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Gallery Heading </title>
+</head>
+<body>
+    <h1> Gallery Heading  </h1>
+    <div class="container">
+        <div class="row">
+        <div class="column">
+        <div class="box"></div>
+        <div class="footer">Image Title</div>
+        </div>
+        <div class="column">
+        <div class="box"></div>
+        <div class="footer">Image Title</div>
+        </div>
+        <div class="column">
+        <div class="box"></div>
+        <div class="footer">Image Title</div>
+        </div>
+        <div class="column">
+        <div class="box"></div>
+        <div class="footer">Image Title</div>
+        </div>
+        <div class="column">
+        <div class="box"></div>
+        <div class="footer">Image Title</div>
+        </div>
+        </div>
+        <div class="row">
+        <div class="column">
+        <div class="box"></div>
+        <div class="footer">Image Title</div>
+        </div>
+        <div class="column">
+            <div class="box"></div>
+            <div class="footer">Image Title</div>
+            </div>
+            <div class="column">
+            <div class="box"></div>
+            <div class="footer">Image Title</div>
+            </div>
+            <div class="column">
+            <div class="box"></div>
+            <div class="footer">Image Title</div>
+            </div>
+            <div class="column">
+            <div class="box"></div>
+            <div class="footer">Image Title</div>
+            </div>
+        </div>
+        </div>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pretium varius varius. Duis volutpat elementum neque, sed congue neque luctus ut. Nunc ligula lacus, hendrerit eget urna finibus, tristique ullamcorper nulla. Pellentesque congue laoreet eros. Nunc sit amet ipsum id ex rhoncus ornare quis eu mi. Morbi ac finibus odio. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc mattis
+            tempus tempor. Etiam at neque sed nisl ornare semper pharetra non sapien. Praesent pellentesque, ipsum a fermentum fermentum, sapien dui pharetra felis, in dictum arcu urna in nibh. Aliquam pulvinar pellentesque nisl, pharetra ultricies mauris auctor vel. Aliquam erat volutpat. Vestibulum suscipit ut ligula finibus semper. In hac habitasse platea dictumst. Fusce ante nisi, auctor vel fermentum sed, tincidunt non ex. </p>
+
+</body>
+
+<style>
+
+.container {
+max-width: 960px;
+width: 90%;
+margin: 0 auto;
+}
+
+.row{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.column{
+    flex-basis: 10%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(69, 69, 234);
+    background-image: url("placeholder-image.png");
+    background-size: 120px;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.footer{
+    text-align: center;
+}
+.p{
+    font-size: 19px;
+
+}
+
+@media screen and (max-width: 1024px) {
+.column {
+flex-basis: 33.33%;
+align-self: baseline;
+}
+}
+@media screen and (max-width: 768px) {
+.column {
+flex-basis: 50%;
+align-self: baseline;
+}
+}
+@media screen and (max-width: 414px) {
+.column {
+flex-basis: 100%;
+align-self: baseline;
+}
+}
+
+@media screen and (max-width: 1024px) {
+.p {
+font-size: 18px;
+}
+}
+ 
+@media screen and (max-width: 768px) {
+.p {
+font-size: 17px;
+}
+}
+ 
+@media screen and (max-width: 414px) {
+.p {
+font-size: 16px;
+}
+}
+
+</style>
+</html>
